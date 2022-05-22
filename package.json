@@ -7,8 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
     "core-js": "^3.6.5",
     "firebase": "^9.8.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
     "pinia": "^2.0.14",
     "simple-jscalendar": "^1.4.4",
     "v-calendar": "^3.0.0-alpha.8",

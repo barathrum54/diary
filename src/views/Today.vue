@@ -16,6 +16,7 @@
           :class="{ selected: item.selected }"
           class="mood-select-item"
           v-for="item in moods"
+          :key="item.id"
         >
           {{ item.icon }}
         </div>
@@ -24,7 +25,7 @@
     </div>
     <div class="contain" v-else>
       <h2 class="title">Today's Log</h2>
-      <div class="content">
+      <div class="_content">
         {{ todaysData.content }}
       </div>
       <br />
@@ -106,7 +107,7 @@ const saveLog = () => {
 </script>
 <style>
 .container {
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .title {
@@ -123,15 +124,15 @@ const saveLog = () => {
 .today-input:focus {
   outline: none;
 }
-.content{
+._content {
   font-size: 18px;
   border: 1pt solid rgba(0, 0, 0, 0.2);
-  max-width: 50% ;
-  margin:auto;
+  width: 100%;
+  margin: auto;
   padding: 20px;
   text-align: left;
 }
-.mood{
+.mood {
   font-size: 40px;
 }
 .mood-select-wrap {
