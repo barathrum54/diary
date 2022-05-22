@@ -1,0 +1,30 @@
+{
+  "name": "diary",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "firebase": "^9.8.1",
+    "pinia": "^2.0.14",
+    "simple-jscalendar": "^1.4.4",
+    "v-calendar": "^3.0.0-alpha.8",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vue-swal2": "^1.0.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/compiler-sfc": "^3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
