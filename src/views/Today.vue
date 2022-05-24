@@ -61,12 +61,14 @@ const todaysData = ref("");
 const isLoading = ref(false);
 onMounted(() => {
   isLoading.value = true;
+  getToday();
+});
+const getToday = () => {
   CrudService.getToday().then((res) => {
     todaysData.value = res;
     isLoading.value = false;
   });
-});
-
+};
 const selectMood = (item) => {
   moods.value.forEach((element) => {
     element.selected = false;
@@ -83,7 +85,7 @@ const saveLog = () => {
     userid: getUser.value.uid,
   };
   console.log(data);
-  if (!data.mood) {
+  if (data.mood == null) {
     Swal.fire("Error", "Please select a mood", "error");
     return;
   }
